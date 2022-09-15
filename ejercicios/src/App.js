@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './logo.png';
 import './App.css';
 
 function App() {
@@ -7,15 +7,15 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Estuve editando <code>src/App.js</code> y algunas cosas mas :).
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://un-poco-de-mi.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Los ejercicios anteriores
         </a>
       </header>
     </div>
