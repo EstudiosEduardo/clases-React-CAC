@@ -1,5 +1,6 @@
 import logo from './logo.png';
 import './App.css';
+import Lista from './components/Lista/Lista';
 
 function App() {
   return (
@@ -9,6 +10,9 @@ function App() {
         <p>
           Estuve editando <code>src/App.js</code> y algunas cosas mas :).
         </p>
+        <Lista/>
+        
+
         <a
           className="App-link"
           href="https://un-poco-de-mi.netlify.app/"
