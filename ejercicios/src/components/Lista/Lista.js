@@ -1,21 +1,32 @@
-import React, { Component } from 'react';
-import './Lista.css';
+'use strict';
+import Boton from '../Boton/Boton.js';
+import Audio from '../Audio/Audio.js';
+import Video from '../Video/Video.js';
 
-import Boton from '../Boton/Boton';
-import Audio from '../Audio/Audio';
-import Video from '../Video/Video';
 
-export default class Lista extends Component {
+const ReactElement = React.createElement;
+export default class Lista extends React.Component {
 
     render() {
-        return (
-            <div className='lista'>
-                <ul>
-                    <li> <Boton/> </li>
-                    <li> <Audio/> </li>
-                    <li> <Video/> </li>
-                </ul>
-            </div>
-        )
+        return ReactElement(
+            'ul',
+            null,
+            ReactElement(
+                'li',
+                null,
+                ReactElement(Boton)
+            ),
+            ReactElement(
+                'li',
+                null,
+                ReactElement(Audio)
+            ),
+            ReactElement(
+                'li',
+                null,
+                ReactElement(Video)
+            )
+           
+        );
     }
 }
